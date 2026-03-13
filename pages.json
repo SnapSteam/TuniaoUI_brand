@@ -1,0 +1,93 @@
+{
+  "easycom": {
+    "^tn-(.*)": "@/tuniao-ui/components/tn-$1/tn-$1.vue"
+  },
+  "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index",
+      "style": {
+        "mp-weixin": {
+          "disableScroll": true
+        },
+        "app-plus": {
+          "bounce": "none"
+        },
+        "mp-alipay": {
+          "allowsBounceVertical": "NO"
+        },
+        "mp-baidu": {
+          "disableScroll": true
+        }
+      }
+    }
+  ],
+  "subPackages": [{
+    "root": "homePages",
+    "pages": [{
+        "path": "about",
+        "style": {
+          "navigationBarTitleText": "关于我们",
+          "enablePullDownRefresh": false
+        }
+      }
+    ]
+  }, {
+    "root": "productPages",
+    "pages": [{
+        "path": "details",
+        "style": {
+          "navigationBarTitleText": "商品详情",
+          "enablePullDownRefresh": false
+        }
+      }
+    ]
+  }, {
+    "root": "cartPages",
+    "pages": [{
+        "path": "payment",
+        "style": {
+          "navigationBarTitleText": "订单支付",
+          "enablePullDownRefresh": false
+        }
+      }
+    ]
+  }, {
+    "root": "minePages",
+    "pages": [{
+        "path": "set",
+        "style": {
+          "navigationBarTitleText": "全局设置",
+          "enablePullDownRefresh": false
+        }
+      },
+      {
+        "path": "help",
+        "style": {
+          "navigationBarTitleText": "帮助中心",
+          "enablePullDownRefresh": false
+        }
+      },
+      {
+        "path": "order",
+        "style": {
+          "navigationBarTitleText": "全部订单",
+          "enablePullDownRefresh": false
+        }
+      },
+      {
+        "path": "order-details",
+        "style": {
+          "navigationBarTitleText": "订单详情",
+          "enablePullDownRefresh": false
+        }
+      }
+    ]
+  }],
+  "globalStyle": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "图鸟UI+品牌",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
+}
